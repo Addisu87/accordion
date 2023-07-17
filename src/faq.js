@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { faqs } from "./data/AccordionData";
 
-const faq = () => {
+const FAQ = () => {
   const [activeTab, setActiveTab] = useState(null);
+
   const toggleAccordion = (index) => {
     setActiveTab((prevTab) => (prevTab === index ? null : index));
   };
@@ -36,4 +37,4 @@ const faq = () => {
   );
 };
 
-export default faq;
+export default FAQ;
